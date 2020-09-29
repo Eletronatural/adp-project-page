@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to All Devices Plattform
 
 You can use the [editor on GitHub](https://github.com/Eletronatural/adp-system/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
