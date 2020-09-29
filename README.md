@@ -1,37 +1,21 @@
-## Welcome to All Devices Plattform
+# All Devices Plattform
 
-You can use the [editor on GitHub](https://github.com/Eletronatural/adp-system/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+O All Devices Plattform (ou ADP) é um sistema de gerenciamento de dispositivos IoT, como atuadores de luzes, portões eletrônicos, fechaduras digitais e sensores de temperatura, de fácil configuração e utilização. Sua principal aplicação é no ambiente doméstico, em casas e condomínios de casas ou de apartamentos mas também pode ser configurado para instalações comerciais e industriais.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+O sistema é composto por três tipos de módulos, o gerenciador, o controlador e os dispositivos controlados.
 
-### Markdown
+## Especificação Técnica
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Os módulos gerenciador e controlador foram implementados em linguagem de programação Java e são executados em um computador embarcado dedidaco (Raspberry Pi).
 
-```markdown
-Syntax highlighted code block
+Os dispositivos, em sua maioria, foram implementados em linguagem de programação C/C++ e são executados em microcontroladores embarcados dedicados (Arduino / ESP8266)
 
-# Header 1
-## Header 2
-### Header 3
+O sistema é flexível para evolução, possibilitando a adição de novas funcionalidades e o controle de novos tipos de dispositivos.
 
-- Bulleted
-- List
+A comunicação entre o controlador e os dispositivos é feita através de fila de mensagens, utilizando o protocolo MQTT.
 
-1. Numbered
-2. List
+O acesso dos usuários ao sistema é feito através do protocolo HTTP, contemplando os requisitos de segurança da Internet (modelo OAuth2).
 
-**Bold** and _Italic_ and `Code` text
+## Contato
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Eletronatural/adp-system/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Arquiteto e desenvolvedor: Gustavo Rubin (gusrubin@gmail.com)
